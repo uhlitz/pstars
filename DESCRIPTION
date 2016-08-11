@@ -1,0 +1,16 @@
+Package: pstars
+Type: Package
+Title: Display p-values with asterisk symbols
+Version: 0.1
+Authors@R: person("Florian", "Uhlitz", email = "uhlitz@hu-berlin.de",
+  role = c("aut", "cre"))
+Description: Convert numeric pvalues to asterisk symbols: 0.05: *; 0.01: **, 0.001: ***, 0.0001: ****, 0.00001: *****
+License: GPL-3 + file LICENSE
+URL: https://github.com/uhlitz/pstars
+BugReports: https://github.com/uhlitz/pstars/issues
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
