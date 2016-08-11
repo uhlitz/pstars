@@ -1,7 +1,7 @@
 
 #  Display p-values with asterisk symbols
 
-Convert numeric pvalues to asterisk symbols: 0.05: *; 0.01: **, 0.001: ***, 0.0001: ****, 0.00001: *****
+Convert numeric pvalues to asterisk symbols: 0.05: \*; 0.01: \*\*, 0.001: \*\*\*, 0.0001: \*\*\*\*, 0.00001: \*\*\*\*\*
 
 # Installation
 
