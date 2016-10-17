@@ -2,7 +2,7 @@
 % Please edit documentation in R/pstars.R
 \name{pstar}
 \alias{pstar}
-\title{Wrapper functions to convert gene identifiers in org.Hs.eg.db or org.Mm.eg.db package}
+\title{Convert numeric pvalues to character vector.}
 \usage{
 pstar(pvalue)
 }
@@ -13,9 +13,7 @@ pstar(pvalue)
 A character vector of same length as input
 }
 \description{
-\code{pstars} converts ids from identifier X to identifier Y using AnnotationDbi.
-By default, target ids are concatenated for non-unique mappings, but non-unique mappings can be
-forced to return unique mappings. However, this is not recommended.
+\code{pstars} converts numeric pvalues to a character vector of asterisk symbols.
 }
 \examples{
 pstars(c(0.04, 0.005, 0.1))

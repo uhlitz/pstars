@@ -1,15 +1,13 @@
-#' Wrapper functions to convert gene identifiers in org.Hs.eg.db or org.Mm.eg.db package
+#' Convert numeric pvalues to character vector.
 #'
-#' \code{pstars} converts ids from identifier X to identifier Y using AnnotationDbi.
-#' By default, target ids are concatenated for non-unique mappings, but non-unique mappings can be
-#' forced to return unique mappings. However, this is not recommended.
+#' \code{pstars} converts numeric pvalues to a character vector of asterisk symbols.
 #'
 #' @param pvalues vector of numeric pvalues to be converted
 #' @return A character vector of same length as input
 #' @examples
 #' pstars(c(0.04, 0.005, 0.1))
 pstar <- function(pvalue) {
-  if(!is.numeric(pvalue)) stop("pvalue must be of class numeric")
+  if(!is.numeric(pvalue)) stop("pvalues must be of class numeric")
   if(pvalue >= 0.05) result <- "n.s."
   if(pvalue < 0.05) result <- "*"
   if(pvalue < 0.01) result <- "**"
